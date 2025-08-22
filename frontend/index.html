@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>폭염 대피소 지도</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  
+  
+  
+</head>
+<body>
+  <header>
+    <h1>부산 폭염 대피소 지도</h1>
+  </header>
+
+  <main class="container">
+    <section id="map"></section>
+    <hr>
+    <div id="user">
+      <input type="text" id="user-address" placeholder="주소를 입력하세요" size="40">
+      <button onclick="handleUserLocation()">위치 설정</button>
+    </div>
+    <div id="recommendation-list" class="scroll-list"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 폭염 대피소 시스템 _ 烈仙</p>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
